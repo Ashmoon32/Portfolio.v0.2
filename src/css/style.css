@@ -1,0 +1,161 @@
+:root {
+    --primary-color: #0A0F24;
+    --secondary-color: #3a5ecc;
+    --button-color: #1E3A8A;
+    --text-primary: #fff;
+    --text-secondary: #AAB3C4;
+    --gradient-color: linear-gradient(135deg, #0A0F24, #1E3A8A);
+    --font-size: 1.1rem;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: var(--primary-color);
+    color: var(--text-primary);
+    font-size: var(--font-size);
+    max-width: 100%;
+}
+
+/* header section - start */
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--secondary-color);
+    position: fixed;
+    width: 100%;
+    padding: 10px;
+    height: 80px;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(4px);
+    z-index: 10;
+}
+
+header img[alt="Ashmoon32-Logo"] {
+    width: 60px;
+    height: auto;
+}
+
+.title-and-icon {
+    display: flex;
+    gap: 2px;
+    align-items: center;
+}
+
+/* hide header title for mobile */
+.title-and-icon h1 {
+    display: none;
+}
+
+nav ul {
+    display: none; /* hide for mobile */
+    /* display: flex; */
+    gap: 10px
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-secondary);
+}
+
+/* header section - End */
+
+/* main section - Start */
+
+main {
+    max-width: 80%;
+    margin: 120px auto 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+/* hero section - Start */
+.hero {
+    padding: 10px 0;
+    margin: 30px auto;
+}
+
+.hero > img {
+    margin-bottom: 20px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--text-secondary);
+    box-shadow: 1px 1px 10px 5px var(--secondary-color);
+}
+
+.hero .about {
+    max-width: 80%;
+    text-align: center;
+    margin: 10px auto;
+}
+
+/* hero section - End */
+
+/* Skills section - Start */
+
+.skills {
+    max-width: 100%;
+    margin: 20px auto;
+
+}
+
+.skills-container {
+    display: flex;
+    gap: 20px;
+    max-width: 60%;
+    margin: 20px auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.skills h3 {
+    margin: 20px auto;
+    text-decoration: underline;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.skills-container i {
+    font-size: 60px;
+    margin-bottom: 3px;
+    padding: 5px;
+}
+
+
+/* skill icons color */
+.fa-html5 {
+    color: #E34F26;
+    text-shadow: 0 0 10px rgba(227, 79, 38, 0.6);
+}
+
+.fa-css3-alt {
+    color: #1572B6;
+    text-shadow: 0 0 10px rgba(21, 114, 182, 0.6);
+}
+
+.fa-js {
+    color: #F7DF1E;
+    text-shadow: 0 0 10px rgba(247, 223, 30, 0.6);
+}
+
+.fa-bootstrap {
+    color: #681ead;
+    text-shadow: 0 0 10px rgba(92, 35, 115, 0.698);
+}

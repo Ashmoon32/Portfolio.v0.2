@@ -71,6 +71,10 @@ nav ul li a {
     color: var(--text-secondary);
 }
 
+.hamburger-menu {
+    font-size: 30px;
+}
+
 /* header section - End */
 
 /* main section - Start */
@@ -318,6 +322,19 @@ main {
     font-size: 13px;
 }
 
+button {
+    width: 30%;
+    padding: 20px 30px;
+    font-size: 1rem;
+    margin: 10px auto;
+    border: none;
+    border-radius: 10px;
+    background: var(--secondary-color);
+    color: var(--text-primary);
+    cursor: pointer;
+}
+
+
 /* Contact section - End */
 
 /* Main section - End */
@@ -396,5 +413,46 @@ footer {
 
     .skill i {
         font-size: 80px;
+    }
+
+    .title-and-icon h1 {
+        display: block;
+        font-size: 2.5rem;
+        margin-left: 5px;
+        text-shadow: 2px 3px 7px var(--primary-color);
+    }
+
+    nav {
+        width: 40%;
+        padding: 10px;
+    }
+
+    nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 10px 10px;
+        border-radius: 10px;
+        
+    }
+
+    nav ul li a {
+        color: var(--primary-color);
+        font-weight: 200;
+        font-size: 1.2rem;
+        
+    }
+
+    nav ul a:hover {
+        cursor: pointer;
+        color: #fff;
+    }
+
+    nav ul a:active {
+        color: blue;
+    }
+
+    .hamburger-menu {
+        display: none;
     }
 }

@@ -41,12 +41,15 @@
             <section class="hero" id="about">
                 <img src="/public/img/ashmoon-pic.png" alt="Ashmoon-image" title="Ashmoon image">
                 <div class="about">
-                    I'm Ashmoon, Min La Pyae Han (my real burmese name), 20 years old IT student from Myanmar also known as Burma. My goal is to become Full Stack Engineer. But for now , I am just finished the foundation of web development HTML, CSS and JavaScript. I have a plan to learn React.js, PHP and Laravel.
+                    <h3>About Me</h3>
+                    <p>I'm Ashmoon, Min La Pyae Han (my real burmese name), 20 years old IT student from Myanmar also known as Burma. My goal
+                    is to become Full Stack Engineer. But for now , I am just finished the foundation of web development HTML, CSS and
+                    JavaScript. I have a plan to learn React.js, PHP and Laravel.</p>
                 </div>
             </section>
 
             <section class="skills">
-                <h3>Current Tech Skills</h3>
+                <h3> My Current Tech Skills</h3>
                 <div class="skills-container container">
                     <div class="skill">
                         <i class="fa-brands fa-html5"></i>
@@ -69,54 +72,49 @@
 
             <section class="projects-section" id="projects">
                 <div class="projects-container container">
+                    <h3>My Projects</h3>
                     <div class="project-cards">
                         <div class="card">
-                            <img src="" alt="project-image">
-                            <i></i>
-                            <span></span>
-                            <p></p>
-                            <a href="" title="GitHub"></a>
-                            <a href="" title="Live Demo"></a>
+                            <img src="/public/img/movie-website-pic.png" alt="project-image">
+                            <span>Movie Search Website</span>
+                            <p>This is a Movie Search Website made with HTML, CSS, JavaScript and API from <a href="https://www.themoviedb.org/" title="TMDB" class="api-links">themoviedb</a></p>
+                            <a href="https://github.com/Ashmoon32/Movie-Website.git" title="GitHub"><i class="fa-brands fa-github"></i>GitHub Repo</a>
+                            <a href="" title="Live Demo">Live Demo</a>
                         </div>
                         <div class="card">
-                            <img src="" alt="project-image">
-                            <i></i>
-                            <span></span>
-                            <p></p>
-                            <a href="" title="GitHub"></a>
-                            <a href="" title="Live Demo"></a>
+                            <img src="/public/img/landing-page-pic.png" alt="project-image">
+                            <span>Landing Page</span>
+                            <p>Landing page of Leonardo Da Vinci made with HTML and CSS.</p>
+                            <a href="" title="GitHub"><i class="fa-brands fa-github"></i>GitHub Repo</a>
+                            <a href="" title="Live Demo">Live Demo</a>
                         </div>
                         <div class="card">
-                            <img src="" alt="project-image">
-                            <i></i>
-                            <span></span>
-                            <p></p>
-                            <a href="" title="GitHub"></a>
-                            <a href="" title="Live Demo"></a>
+                            <img src="/public/img/text-to-speech-generator.png" alt="project-image">
+                            <span>Text to Speech Converter</span>
+                            <p>Simple text to speech converter made with HTML, CSS and JavaScript.</p>
+                            <a href="" title="GitHub"><i class="fa-brands fa-github"></i>GitHub Repo</a>
+                            <a href="" title="Live Demo">Live Demo</a>
                         </div>
                         <div class="card">
-                            <img src="" alt="project-image">
-                            <i></i>
-                            <span></span>
-                            <p></p>
-                            <a href="" title="GitHub"></a>
-                            <a href="" title="Live Demo"></a>
+                            <img src="/public/img/pomodoro-timer.png" alt="project-image">
+                            <span>Pomodoro Timer</span>
+                            <p>Pomodoro timer made with HTML, CSS and JavaScript.</p>
+                            <a href="" title="GitHub"><i class="fa-brands fa-github"></i>GitHub Repo</a>
+                            <a href="" title="Live Demo">Live Demo</a>
                         </div>
                         <div class="card">
-                            <img src="" alt="project-image">
-                            <i></i>
-                            <span></span>
-                            <p></p>
-                            <a href="" title="GitHub"></a>
-                            <a href="" title="Live Demo"></a>
+                            <img src="/public/img/admin-dashboard.png" alt="project-image">
+                            <span>Admin Dashboard</span>
+                            <p>Admin Dashboard made with HTML, CSS and Bootstrap.</p>
+                            <a href="https://github.com/Ashmoon32/Admin-Dashboard.git" title="GitHub"><i class="fa-brands fa-github"></i>GitHub Repo</a>
+                            <a href="" title="Live Demo">Live Demo</a>
                         </div>
                         <div class="card">
-                            <img src="" alt="project-image">
-                            <i></i>
-                            <span></span>
-                            <p></p>
-                            <a href="" title="GitHub"></a>
-                            <a href="" title="Live Demo"></a>
+                            <img src="/public/img/Weather-App1.png" alt="project-image">
+                            <span>Weather App</span>
+                            <p>Just Simple Weather App made with HTML, CSS and JavaScript and API from <a href="https://openweathermap.org/" class="api-links">theopenweathermap</a>.</p>
+                            <a href="https://github.com/Ashmoon32/Weather-App.git" title="GitHub"><i class="fa-brands fa-github"></i>GitHub Repo</a>
+                            <a href="" title="Live Demo">Live Demo</a>
                         </div>
                     </div>
                 </div>
@@ -125,17 +123,23 @@
             <section class="contact-section container" id="contact">
                 <div class="contact-container">
                     <h3>Contact Me</h3>
-                    <form action="">
-                        <label for="name">Name:</label>
-                        <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
-                        <br>
-
-                        <label for="email">Email:</label>
-                        <input type="email" name="email" id="email" placeholder="Enter Your Email" readonly>
-                        <br>
-
-                        <label for="message">Message:</label> <br>
-                        <textarea name="message" id="message" placeholder="Tell me anything you want..." cols="40" rows="8"></textarea>
+                    <form action="#">
+                        <div class="form-group">
+                            <div class="form-group-inside">
+                                <input type="text" name="name" id="name" required>
+                                <label for="name">Name</label>
+                            </div>
+                                                   
+                            <div class="form-group-inside">
+                                <input type="email" name="email" id="email" required>
+                                <label for="email">Email</label>
+                            </div>
+                            
+                            <div class="form-group-inside">
+                                <textarea name="message" id="message" required rows="8" cols="20"></textarea>
+                                <label for="message">Message</label>
+                            </div>
+                        </div>
                     </form>
                 </div>
             </section>
@@ -144,7 +148,10 @@
 
     <footer>
         <div class="footer-section container">
-            <small>&copy; Ashmoon32 | Portfolio 2025  v0.2.</small>
+            <small>&copy; Ashmoon32 | Portfolio 2025  v0.2.All right reserved.
+                <br>
+                Made with HTML, CSS and JavaScript.
+            </small>
         </div>
     </footer>
 </body>

@@ -4,7 +4,6 @@
     --button-color: #1E3A8A;
     --text-primary: #fff;
     --text-secondary: #AAB3C4;
-    --gradient-color: linear-gradient(135deg, #0A0F24, #1E3A8A);
     --font-size: 1.1rem;
     --secondary-header-font-size: 1.7rem;
 }
@@ -110,6 +109,12 @@ main {
     font-size: var(--secondary-header-font-size);
 }
 
+.about p {
+    font-size: var(--font-size);
+    font-weight: 100;
+    line-height: 1.3rem;
+}
+
 /* hero section - End */
 
 /* Skills section - Start */
@@ -171,6 +176,7 @@ main {
 
 .projects-container {
     margin: 50px auto;
+    max-width: 1000px;
 }
 
 .projects-container h3 {
@@ -316,10 +322,79 @@ main {
 
 /* Main section - End */
 
-/* footer */
+/* footer - start */
 
 footer {
     text-align: center;
     color: #dfdfdfaa;
 }
 
+/* footer - end */
+
+/* Responsive section - start */
+
+/* Unexpected error occurred! I though , in large screen, making two columns for cards will cards look beautiful . But it not really look good:)) */
+
+/* @media (min-width: 900px) {
+    .project-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    .card {
+        min-height: 400px;
+    }
+    .card img {
+        min-height: 200px;
+    }
+} */
+
+@media (min-width: 900px) {
+    .project-cards {
+        gap: 50px;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+    .card img {
+        margin-bottom: 20px;
+    }
+
+    .card span {
+        margin: 20px 0;
+        font-size: 2rem;
+    }
+
+    .card p {
+        margin-bottom: 20px;
+        font-size: 1.3rem;
+    }
+
+    .card a {
+        margin-bottom: 10px;
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    .skills {
+       margin: 50px auto;
+    }
+
+    .skills h3, .about h3, .projects-container h3, .contact-container h3 {
+        margin-bottom: 20px;
+        font-size: 2rem;
+    }
+
+    .about p {
+        font-size: 1.4rem;
+        font-weight: 600;
+        line-height: 2rem;
+        word-spacing: 2px;
+    }
+
+    .skill i {
+        font-size: 80px;
+    }
+}

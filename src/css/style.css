@@ -25,54 +25,119 @@ body {
 
 /* header section - start */
 
-.header-container {
+/* Navbar */
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: var(--secondary-color);
+    background: #0f172a;
+    color: white;
+    padding: 15px 20px;
     position: fixed;
-    width: 100%;
-    padding: 10px;
-    height: 80px;
     top: 0;
     left: 0;
-    backdrop-filter: blur(4px);
-    z-index: 10;
+    right: 0;
+    z-index: 1000;
 }
 
-header img[alt="Ashmoon32-Logo"] {
-    width: 60px;
-    height: auto;
+.logo>img {
+    height: 30px;
+    width: auto;
 }
 
-.title-and-icon {
+/* Hamburger Icon */
+.hamburger {
     display: flex;
-    gap: 2px;
-    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 26px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 1100;
 }
 
-/* hide header title for mobile */
-.title-and-icon h1 {
-    display: none;
+.hamburger span {
+    width: 100%;
+    height: 3px;
+    background: white;
+    border-radius: 2px;
+    transition: 0.3s;
 }
 
-nav ul {
-    display: none; /* hide for mobile */
-    /* display: flex; */
-    gap: 10px
+/* Side Menu */
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #1e293b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    padding-left: 30px;
+    transition: left 0.3s ease;
+    z-index: 1050;
 }
 
-nav ul li {
-    list-style: none;
-}
-
-nav ul li a {
+.side-menu a {
+    color: white;
     text-decoration: none;
-    color: var(--text-secondary);
+    font-size: 1.2rem;
+    transition: color 0.2s;
 }
 
-.hamburger-menu {
-    font-size: 30px;
+.side-menu a:hover {
+    color: #38bdf8;
+}
+
+/* Overlay background */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 23, 42, 0.6);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+    z-index: 1040;
+}
+
+/* Active States */
+.side-menu.active {
+    left: 0;
+}
+
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translateY(8px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-8px);
+}
+
+/* Main content */
+main {
+    padding-top: 80px;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
 }
 
 /* header section - End */
@@ -86,13 +151,28 @@ main {
     padding: 10px;
 }
 
+/* home section - Start */
+.home {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.home-title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 10px;
+    color: var(--text-secondary);
+}
+
 /* hero section - Start */
 .hero {
     padding: 10px 0;
     margin: 30px auto;
 }
 
-.hero > img {
+.hero>img {
     margin-bottom: 20px;
     width: 300px;
     height: 300px;
@@ -254,7 +334,7 @@ main {
     max-width: 700px;
 }
 
-.contact-container > h3 {
+.contact-container>h3 {
     margin-bottom: 15px;
     font-size: var(--secondary-header-font-size);
     text-align: center;
@@ -298,10 +378,10 @@ main {
     padding: 0 4px;
     transition: 0.3s ease;
     pointer-events: none;
-    background: var(--primary-color) ;
+    background: var(--primary-color);
 }
 
-.form-group-inside > textarea {
+.form-group-inside>textarea {
     resize: none;
 }
 
@@ -312,10 +392,10 @@ main {
     border-color: #1a73e8;
 }
 
-.form-group-inside input:focus + label,
-.form-group-inside input:valid + label,
-.form-group-inside textarea:focus + label,
-.form-group-inside textarea:valid  + label {
+.form-group-inside input:focus+label,
+.form-group-inside input:valid+label,
+.form-group-inside textarea:focus+label,
+.form-group-inside textarea:valid+label {
     top: -8px;
     left: 8px;
     color: #1a73e8;
@@ -396,10 +476,13 @@ footer {
     }
 
     .skills {
-       margin: 50px auto;
+        margin: 50px auto;
     }
 
-    .skills h3, .about h3, .projects-container h3, .contact-container h3 {
+    .skills h3,
+    .about h3,
+    .projects-container h3,
+    .contact-container h3 {
         margin-bottom: 20px;
         font-size: 2rem;
     }
@@ -413,46 +496,5 @@ footer {
 
     .skill i {
         font-size: 80px;
-    }
-
-    .title-and-icon h1 {
-        display: block;
-        font-size: 2.5rem;
-        margin-left: 5px;
-        text-shadow: 2px 3px 7px var(--primary-color);
-    }
-
-    nav {
-        width: 40%;
-        padding: 10px;
-    }
-
-    nav ul {
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        padding: 10px 10px;
-        border-radius: 10px;
-        
-    }
-
-    nav ul li a {
-        color: var(--primary-color);
-        font-weight: 200;
-        font-size: 1.2rem;
-        
-    }
-
-    nav ul a:hover {
-        cursor: pointer;
-        color: #fff;
-    }
-
-    nav ul a:active {
-        color: blue;
-    }
-
-    .hamburger-menu {
-        display: none;
     }
 }

@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="An IT student from Myanma, Burma who is passionate about Software Engineering especially Full Stack Web Development." />
+    <meta name="description"
+        content="An IT student from Myanma, Burma who is passionate about Software Engineering especially Full Stack Web Development." />
     <meta name="author" content="Ashmoon32" />
     <title>Ashmoon32 | Portfolio.v0.2</title>
 
@@ -15,39 +17,54 @@
     <script src="https://kit.fontawesome.com/0303a573f3.js" crossorigin="anonymous"></script>
 
     <!-- CSS Link -->
-     <link rel="stylesheet" href="./css/style.css" type="text/CSS">
+    <link rel="stylesheet" href="./css/style.css" type="text/CSS">
 </head>
+
 <body>
-    <header   id="about">
-        <div class="header-container container">
-           <div class="title-and-icon">
-            <img src="/public/icon/ashmoon.png" alt="Ashmoon32-Logo" title="Ashmoon">
-            <h1>Ashmoon</h1>
-           </div>
-            <nav>
-                <ul>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact Me</a></li>
-                </ul>
-            </nav>
-            <i class="fa-solid fa-bars hamburger-menu" ></i><!-- Hamburger Menu Icon -->
+    <header class="navbar">
+        <div class="logo"><img src="/public/icon/ashmoon.png" alt="ashmoon logo"></div>
+
+        <!-- Hamburger Icon -->
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
     </header>
 
-    <main>
+    <!-- Overlay Menu -->
+    <nav class="side-menu" id="side-menu">
+        <a href="#home">Home</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Dark Background Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+
+    <main id="home">
         <div class="main-container container">
-            <section class="hero" id="about">
+            <section class="hero">
+                <h1 class="home">
+                    Ashmoon <br>
+                    <div class="home-title">Aspiring Full Stack Engineer</div>
+                </h1>
+
                 <img src="/public/img/ashmoon-pic.png" alt="Ashmoon-image" title="Ashmoon image">
                 <div class="about">
                     <h3>About Me</h3>
-                    <p>I'm Ashmoon, Min La Pyae Han (my real burmese name), 20 years old IT student from Myanmar also known as Burma. My goal
-                    is to become Full Stack Engineer. For now , I just finished the foundation of web development HTML, CSS and
-                    JavaScript and practice with building project from scratch with these skills. I have plan to learn React.js, PHP and Laravel later.</p>
+                    <p>I'm Ashmoon, Min La Pyae Han (my real burmese name), 20 years old IT student from Myanmar also
+                        known as Burma. My goal
+                        is to become Full Stack Engineer. For now , I just finished the foundation of web development
+                        HTML, CSS and
+                        JavaScript and practice with building project from scratch with these skills. I have plan to
+                        learn React.js, PHP and Laravel later.</p>
                 </div>
             </section>
 
-            <section class="skills">
+            <section class="skills" id="skills">
                 <h3> My Current Tech Skills</h3>
                 <div class="skills-container container">
                     <div class="skill">
@@ -76,45 +93,59 @@
                         <div class="card">
                             <img src="/public/img/movie-website-pic.png" alt="project-image">
                             <span>Movie Search Website</span>
-                            <p>This is a Movie Search Website made with HTML, CSS, JavaScript and API from <a href="https://www.themoviedb.org/" title="TMDB" class="api-links">themoviedb</a></p>
-                            <a href="https://github.com/Ashmoon32/Movie-Website.git" title="GitHub"><i class="fa-brands fa-github"></i> GitHub Repo</a>
-                            <a href="#" title="Live Demo" style="color: #dfdfdfaa;"><i class="fas fa-external-link-alt" style="color: #ccc;"></i> Live Demo(Unavailable)</a>
+                            <p>This is a Movie Search Website made with HTML, CSS, JavaScript and API from <a
+                                    href="https://www.themoviedb.org/" title="TMDB" class="api-links">themoviedb</a></p>
+                            <a href="https://github.com/Ashmoon32/Movie-Website.git" title="GitHub"><i
+                                    class="fa-brands fa-github"></i> GitHub Repo</a>
+                            <a href="#" title="Live Demo" style="color: #dfdfdfaa;"><i class="fas fa-external-link-alt"
+                                    style="color: #ccc;"></i> Live Demo(Unavailable)</a>
                         </div>
                         <div class="card">
                             <img src="/public/img/landing-page-pic.png" alt="project-image">
                             <span>Landing Page</span>
                             <p>Landing page of Leonardo Da Vinci made with HTML and CSS.</p>
-                            <a href="https://github.com/Ashmoon32/Landing-page.git" title="GitHub"><i class="fa-brands fa-github"></i>GitHub Repo</a>
-                            <a href="https://ashmoon32.github.io/Landing-page/" title="Live Demo"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="https://github.com/Ashmoon32/Landing-page.git" title="GitHub"><i
+                                    class="fa-brands fa-github"></i>GitHub Repo</a>
+                            <a href="https://ashmoon32.github.io/Landing-page/" title="Live Demo"><i
+                                    class="fas fa-external-link-alt"></i> Live Demo</a>
                         </div>
                         <div class="card">
                             <img src="/public/img/text-to-speech-generator.png" alt="project-image">
                             <span>Text to Speech Converter</span>
                             <p>Simple text to speech converter made with HTML, CSS and JavaScript.</p>
-                            <a href="https://github.com/Ashmoon32/JavaScript-Small-Project/tree/dc1af732bb4836f1af5c89c3fedaf97658adb8c4/text-to-speech-generator" title="GitHub"><i class="fa-brands fa-github"></i>GitHub Repo</a>
-                            <a href="https://ashmoon32.github.io/JavaScript-Small-Project/" title="Live Demo"><i class="fas fa-external-link-alt"></i>
+                            <a href="https://github.com/Ashmoon32/JavaScript-Small-Project/tree/dc1af732bb4836f1af5c89c3fedaf97658adb8c4/text-to-speech-generator"
+                                title="GitHub"><i class="fa-brands fa-github"></i>GitHub Repo</a>
+                            <a href="https://ashmoon32.github.io/JavaScript-Small-Project/" title="Live Demo"><i
+                                    class="fas fa-external-link-alt"></i>
                                 Live Demo</a>
                         </div>
                         <div class="card">
                             <img src="/public/img/pomodoro-timer.png" alt="project-image">
                             <span>Pomodoro Timer</span>
                             <p>Pomodoro timer made with HTML, CSS and JavaScript.</p>
-                            <a href="https://github.com/Ashmoon32/JavaScript-Small-Project/tree/dc1af732bb4836f1af5c89c3fedaf97658adb8c4/pomodoro-timer" title="GitHub"><i class="fa-brands fa-github"></i>GitHub Repo</a>
-                            <a href="https://ashmoon32.github.io/JavaScript-Small-Project/" title="Live Demo"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="https://github.com/Ashmoon32/JavaScript-Small-Project/tree/dc1af732bb4836f1af5c89c3fedaf97658adb8c4/pomodoro-timer"
+                                title="GitHub"><i class="fa-brands fa-github"></i>GitHub Repo</a>
+                            <a href="https://ashmoon32.github.io/JavaScript-Small-Project/" title="Live Demo"><i
+                                    class="fas fa-external-link-alt"></i> Live Demo</a>
                         </div>
                         <div class="card">
                             <img src="/public/img/admin-dashboard.png" alt="project-image">
                             <span>Admin Dashboard</span>
                             <p>Admin Dashboard made with HTML, CSS and Bootstrap.</p>
-                            <a href="https://github.com/Ashmoon32/Admin-Dashboard.git" title="GitHub"><i class="fa-brands fa-github"></i>GitHub Repo</a>
-                            <a href="https://ghost-dashboard.netlify.app/" title="Live Demo"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="https://github.com/Ashmoon32/Admin-Dashboard.git" title="GitHub"><i
+                                    class="fa-brands fa-github"></i>GitHub Repo</a>
+                            <a href="https://ghost-dashboard.netlify.app/" title="Live Demo"><i
+                                    class="fas fa-external-link-alt"></i> Live Demo</a>
                         </div>
                         <div class="card">
                             <img src="/public/img/Weather-App1.png" alt="project-image">
                             <span>Weather App</span>
-                            <p>Just Simple Weather App made with HTML, CSS and JavaScript and API from <a href="https://openweathermap.org/" class="api-links">theopenweathermap</a>.</p>
-                            <a href="https://github.com/Ashmoon32/Weather-App.git" title="GitHub"><i class="fa-brands fa-github"></i>GitHub Repo</a>
-                            <a href="https://ashmoon32.github.io/Weather-App/" title="Live Demo"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <p>Just Simple Weather App made with HTML, CSS and JavaScript and API from <a
+                                    href="https://openweathermap.org/" class="api-links">theopenweathermap</a>.</p>
+                            <a href="https://github.com/Ashmoon32/Weather-App.git" title="GitHub"><i
+                                    class="fa-brands fa-github"></i>GitHub Repo</a>
+                            <a href="https://ashmoon32.github.io/Weather-App/" title="Live Demo"><i
+                                    class="fas fa-external-link-alt"></i> Live Demo</a>
                         </div>
                     </div>
                 </div>
@@ -129,18 +160,19 @@
                                 <input type="text" name="name" id="name" required>
                                 <label for="name">Name</label>
                             </div>
-                                                   
+
                             <div class="form-group-inside">
                                 <input type="email" name="email" id="email" required>
                                 <label for="email">Email</label>
                             </div>
-                            
+
                             <div class="form-group-inside">
                                 <textarea name="message" id="message" required rows="8" cols="20"></textarea>
                                 <label for="message">Message</label>
                             </div>
 
-                            <button type="submit" class="submit-btn"><i class="fas fa-paper-plane"></i> Send Message</button>
+                            <button type="submit" class="submit-btn"><i class="fas fa-paper-plane"></i> Send
+                                Message</button>
                         </div>
                     </form>
                 </div>
@@ -150,11 +182,31 @@
 
     <footer>
         <div class="footer-section container">
-            <small>&copy; Ashmoon32 | Portfolio 2025  v0.2.All right reserved.
+            <small>&copy; Ashmoon32 | Portfolio 2025 v0.2.All right reserved.
                 <br>
                 Made with HTML, CSS and JavaScript.
             </small>
         </div>
     </footer>
 </body>
+
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const sideMenu = document.getElementById('side-menu');
+    const overlay = document.getElementById('overlay');
+
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        sideMenu.classList.toggle('active');
+        overlay.classList.toggle('active');
+    });
+
+    // Close menu when clicking overlay
+    overlay.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        sideMenu.classList.remove('active');
+        overlay.classList.remove('active');
+    });
+</script>
+
 </html>

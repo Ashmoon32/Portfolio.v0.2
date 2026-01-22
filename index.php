@@ -11,6 +11,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $data .= "-------------------------------\n";
 
     file_put_contents('messages.txt', $data, FILE_APPEND | LOCK_EX);
+
+    echo "Messages sent successfully!";
 }
 
 ?>
